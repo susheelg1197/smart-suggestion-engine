@@ -1,0 +1,11 @@
+title: Create Index 
+description: Sample API to create a basic index 
+
+PUT: http://localhost:9200/{index_name} ## Specify index
+BODY: 
+{
+  "settings":{}, #include index level settings
+  "mappings":{}  #include field types, analyzers, normalyzers, etc
+}
+
+  
